@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*encabezado*/
+header {
+width: 142px;
+height: 140px;
+margin:30px auto;
+background-image: url(mariposasprite.jpg);
+mix-blend-mode: multiply;
+animation: saludo;
+animation-duration: 0.5s;
+animation-timing-function: steps(10);
+animation-iteration-count: 3;
+animation-delay: 1s;
+animation-direction: alternate-reverse;
+}
+
+@keyframes saludo {
+    from { background-position: 1px;
+    }
+    to {background-position: 1421px;}
+}
+
+
+/*texto*/
+body {
+    background-color: rgb(252, 249, 243);
+}
+
+h1{
+    text-align: center;
+    font-family: "Saira", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: -30px;
+}
+
+h2,h3{
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+h2{
+    text-align: center;
+    color: #89ae63;
+    margin-bottom: 20px;
+ 
+}
+
+h3{
+    color: #ba6daf;
+    width: 80%;
+    margin: 5px auto;
+}
+
+p {
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(71, 71, 71);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+a{
+    color: #4272b9;
+    text-decoration: none;
+}
+
+a:hover{
+font-weight: 900;
+}
+
+/*galería*/
+main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+      
+div {
+width: 21%;
+}
+
+img, video { 
+width: 100%;
+margin-bottom: 20px;
+}
+
+/*pie de página*/
+footer {
+    width: 100%;
+    background-color: rgb(183, 211, 151);
+    padding: 10px;
+}
+
+
+footer a {
+    
+    font-family: "Saira", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    text-transform: uppercase;
+    background-color: rgb(253,247,234);
+    border: 2px solid rgb(71, 71, 71);
+    border-radius: 5px;
+    
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin: 10px auto;
+    line-height:23px;
+    padding: 2.5px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+footer a:hover {
+background-color: rgb(71, 71, 71);
+color:  rgb(253,247,234);
+border-color:  rgb(253,247,234);
+}
+
+* {
+    box-sizing: border-box;;
+}
